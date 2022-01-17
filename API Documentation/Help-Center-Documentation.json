@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "d3aa73e8-996a-40e2-abc2-557ec90b5456",
+		"name": "Help Center",
+		"description": "# Introduction\nAPI Documentation For Help Center of Symplified Merchant Store  \n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests a user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Topics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/help-center/topic/"
+			},
+			"response": [
+				{
+					"name": "Get All Topics",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/help-center/topic/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 09:28:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"3acb7655-a88c-48e0-9be1-feee3a02ba1a\",\n        \"heading\": \"Products\",\n        \"description\": null,\n        \"content\": \"Demo Content\",\n        \"topicLevel\": \"0\",\n        \"parentId\": null\n    },\n    {\n        \"id\": \"5be471cb-a392-46b3-8345-391c31805c0d\",\n        \"heading\": \"Add Product\",\n        \"description\": null,\n        \"content\": null,\n        \"topicLevel\": \"2\",\n        \"parentId\": \"de0a0b21-2aad-42c1-8f11-c4a6535c1851\"\n    },\n    {\n        \"id\": \"81b09a39-b4ce-4517-b1bb-bab87dadf2a4\",\n        \"heading\": \"Delete Product\",\n        \"description\": null,\n        \"content\": null,\n        \"topicLevel\": \"2\",\n        \"parentId\": \"de0a0b21-2aad-42c1-8f11-c4a6535c1851\"\n    },\n    {\n        \"id\": \"d8047e09-5f18-484d-9314-a71972c4bd84\",\n        \"heading\": \"Edit Product\",\n        \"description\": null,\n        \"content\": null,\n        \"topicLevel\": \"2\",\n        \"parentId\": \"de0a0b21-2aad-42c1-8f11-c4a6535c1851\"\n    },\n    {\n        \"id\": \"de0a0b21-2aad-42c1-8f11-c4a6535c1851\",\n        \"heading\": \"Add/Update Product\",\n        \"description\": null,\n        \"content\": null,\n        \"topicLevel\": \"1\",\n        \"parentId\": \"3acb7655-a88c-48e0-9be1-feee3a02ba1a\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Topic By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Get Topic By ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/help-center/topic/3acb7655-a88c-48e0-9be1-feee3a02ba1a"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 09:30:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"3acb7655-a88c-48e0-9be1-feee3a02ba1a\",\n    \"heading\": \"Products\",\n    \"description\": null,\n    \"content\": \"Demo Content\",\n    \"topicLevel\": \"0\",\n    \"parentId\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Top Level Topics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/help-center/topic/top-level-topics"
+			},
+			"response": [
+				{
+					"name": "Top Level Topics",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/help-center/topic/top-level-topics"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 09:31:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"3acb7655-a88c-48e0-9be1-feee3a02ba1a\",\n        \"heading\": \"Products\",\n        \"description\": null,\n        \"content\": \"Demo Content\",\n        \"topicLevel\": \"0\",\n        \"parentId\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Topic Content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/help-center/topic/content/3acb7655-a88c-48e0-9be1-feee3a02ba1a"
+			},
+			"response": [
+				{
+					"name": "Get Topic Content",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/help-center/topic/content/3acb7655-a88c-48e0-9be1-feee3a02ba1a"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 09:32:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Demo Content"
+				}
+			]
+		},
+		{
+			"name": "Get Subtopics By Parent ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/help-center/topic/subtopics/de0a0b21-2aad-42c1-8f11-c4a6535c1851"
+			},
+			"response": [
+				{
+					"name": "Get Subtopics By Parent ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/help-center/topic/subtopics/de0a0b21-2aad-42c1-8f11-c4a6535c1851"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 09:33:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"5be471cb-a392-46b3-8345-391c31805c0d\",\n        \"heading\": \"Add Product\",\n        \"description\": null,\n        \"content\": null,\n        \"topicLevel\": \"2\",\n        \"parentId\": \"de0a0b21-2aad-42c1-8f11-c4a6535c1851\"\n    },\n    {\n        \"id\": \"81b09a39-b4ce-4517-b1bb-bab87dadf2a4\",\n        \"heading\": \"Delete Product\",\n        \"description\": null,\n        \"content\": null,\n        \"topicLevel\": \"2\",\n        \"parentId\": \"de0a0b21-2aad-42c1-8f11-c4a6535c1851\"\n    },\n    {\n        \"id\": \"d8047e09-5f18-484d-9314-a71972c4bd84\",\n        \"heading\": \"Edit Product\",\n        \"description\": null,\n        \"content\": null,\n        \"topicLevel\": \"2\",\n        \"parentId\": \"de0a0b21-2aad-42c1-8f11-c4a6535c1851\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Topic",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"heading\" : \"Discounts\",\r\n    \"topicLevel\" : \"0\",\r\n    \"content\" : \"Demo Discounts Content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/help-center/topic/"
+			},
+			"response": [
+				{
+					"name": "Create Topic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"heading\" : \"Discounts\",\r\n    \"topicLevel\" : \"0\",\r\n    \"content\" : \"Demo Discounts Content\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/help-center/topic/"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "153"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 10:53:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Created!\nTopic(id=6db8beed-f08d-4554-bdb0-2494e2787dbf, heading=Discounts, description=null, content=Demo Discounts Content, topicLevel=0, parentId=null)"
+				}
+			]
+		},
+		{
+			"name": "Delete Topic By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/help-center/topic/9c250b4f-3e2f-4462-a816-6a40ce22c2e6"
+			},
+			"response": [
+				{
+					"name": "Delete Topic By ID",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/help-center/topic/9c250b4f-3e2f-4462-a816-6a40ce22c2e6"
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 10:51:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Update Topic",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"heading\" : \"Discount Tier\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/help-center/topic/6db8beed-f08d-4554-bdb0-2494e2787dbf"
+			},
+			"response": [
+				{
+					"name": "Update Topic",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"heading\" : \"Discount Tier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/help-center/topic/6db8beed-f08d-4554-bdb0-2494e2787dbf"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 10:54:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"6db8beed-f08d-4554-bdb0-2494e2787dbf\",\n    \"heading\": \"Discount Tier\",\n    \"description\": null,\n    \"content\": null,\n    \"topicLevel\": null,\n    \"parentId\": null\n}"
+				}
+			]
+		}
+	]
+}
