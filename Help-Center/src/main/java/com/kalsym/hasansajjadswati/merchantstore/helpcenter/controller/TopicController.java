@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author hasan
  */
 @RestController
-@RequestMapping("/help-center/topic")
+@RequestMapping("/help-center/topics")
 public class TopicController {
     
     @Autowired
